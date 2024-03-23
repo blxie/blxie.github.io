@@ -50,6 +50,11 @@ const config: Config = {
                 theme: {
                     customCss: "./src/css/custom.css",
                 },
+                // google搜索需要
+                gtag: {
+                    trackingID: "G-G4NRSZR6K3",
+                    anonymizeIP: true,
+                },
             } satisfies Preset.Options,
         ],
     ],
@@ -58,12 +63,13 @@ const config: Config = {
         // Replace with your project's social card
         image: "img/docusaurus-social-card.jpg",
         navbar: {
-            title: "My Site",
+            title: "Blainet's Site",
             logo: {
-                alt: "My Site Logo",
+                alt: "Blainet's Site Logo",
                 src: "img/logo.svg",
             },
             items: [
+                // 顶部栏
                 {
                     type: "docSidebar",
                     sidebarId: "tutorialSidebar",
@@ -75,6 +81,32 @@ const config: Config = {
                     href: "https://github.com/facebook/docusaurus",
                     label: "GitHub",
                     position: "right",
+                },
+                // 顶部栏图标配置
+                {
+                    href: "https://github.com/GitHubJackson/my-docs",
+                    position: "right",
+                    className: "header-github-link",
+                    "aria-label": "GitHub",
+                },
+                {
+                    href: "https://mail.google.com/?view=cm&fs=1&tf=1&to=bailian.xbl@gmail.com",
+                    position: "right",
+                    className: "header-email-link",
+                    "aria-label": "Email",
+                },
+                // 新增顶部栏
+                {
+                    type: "docSidebar",
+                    label: "新栏目1",
+                    sidebarId: "new-tab1",
+                    position: "left",
+                },
+                {
+                    type: "docSidebar",
+                    label: "新栏目2",
+                    sidebarId: "new-tab2",
+                    position: "left",
                 },
             ],
         },
@@ -123,9 +155,16 @@ const config: Config = {
             ],
             copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
+        // 主题配置
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+        },
+        // docsearch 文档搜索
+        algolia: {
+            appId: "xxx", // Application ID
+            apiKey: "xxx", //  Search-Only API Key
+            indexName: "lucas'docs",
         },
     } satisfies Preset.ThemeConfig,
 };

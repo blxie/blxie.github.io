@@ -1,12 +1,15 @@
 ---
 id: blainet-website
+tags: [website, backend, javascript, css]
+# slag 在最后面加上
+# slug: docs
 title: BLAINET’S WEBSITE
 description: This is a detail description about how to build a personal website with docusaurus and algolia
 ---
 
 # BLAINET’S WEBSITE
 
-based on github.io & docusaurus.(start from 2024/3/22 中午 ~ 2024/3/24-01:50:36)
+based on github.io & docusaurus.(start from 2024/3/22 中午 ~ 2024/3/24-02:12:36)
 
 
 

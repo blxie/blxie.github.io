@@ -99,13 +99,13 @@ const config: Config = {
                 {
                     type: "docSidebar",
                     label: "新栏目1",
-                    sidebarId: "new-tab1",
+                    sidebarId: "header-bar1",
                     position: "left",
                 },
                 {
                     type: "docSidebar",
-                    label: "新栏目2",
-                    sidebarId: "new-tab2",
+                    label: "编程学习",
+                    sidebarId: "bar-id-prog",
                     position: "left",
                 },
             ],

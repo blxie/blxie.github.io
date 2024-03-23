@@ -1,6 +1,12 @@
 ---
-sidebar_position: 1
+id: my-new-page
+title: My New Page
+description: This is a description of my new page
 ---
+
+# Introduction
+
+Welcome to my new page!
 
 # Tutorial Intro
 

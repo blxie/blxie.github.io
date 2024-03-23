@@ -1,6 +1,6 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
     title: "My Site",
@@ -32,6 +32,7 @@ const config: Config = {
     presets: [
         [
             "classic",
+            /** @type {import('@docusaurus/preset-classic').Options} */
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
@@ -50,12 +51,13 @@ const config: Config = {
                 theme: {
                     customCss: "./src/css/custom.css",
                 },
-                // google搜索需要
-                gtag: {
-                    trackingID: "G-G4NRSZR6K3",
-                    anonymizeIP: true,
+                sitemap: {
+                    changefreq: "always",
+                    priority: 0.5,
+                    ignorePatterns: ["/tags/**"],
+                    filename: "sitemap.xml",
                 },
-            } satisfies Preset.Options,
+            },
         ],
     ],
 
@@ -77,21 +79,21 @@ const config: Config = {
                     label: "Tutorial",
                 },
                 { to: "/blog", label: "Blog", position: "left" },
-                {
-                    href: "https://github.com/facebook/docusaurus",
-                    label: "GitHub",
-                    position: "right",
-                },
+                // {
+                //     href: "https://github.com/facebook/docusaurus",
+                //     label: "GitHub",
+                //     position: "right",
+                // },
                 // 顶部栏图标配置
                 {
-                    href: "https://github.com/GitHubJackson/my-docs",
+                    href: "https://github.com/facebook/docusaurus",
                     position: "right",
                     className: "header-github-link",
-                    "aria-label": "GitHub",
+                    "aria-label": "GitHub repository",
                 },
                 {
-                    href: "https://mail.google.com/?view=cm&fs=1&tf=1&to=bailian.xbl@gmail.com",
                     position: "right",
+                    to: "mailto:blxie@outlook.com",
                     className: "header-email-link",
                     "aria-label": "Email",
                 },
@@ -155,17 +157,43 @@ const config: Config = {
             ],
             copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
+
         // 主题配置
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
         },
+
         // docsearch 文档搜索
-        algolia: {
-            appId: "xxx", // Application ID
-            apiKey: "xxx", //  Search-Only API Key
-            indexName: "lucas'docs",
-        },
+        // algolia: {
+        //     // The application ID provided by Algolia
+        //     appId: "",
+
+        //     // Public API key: it is safe to commit it
+        //     apiKey: "",
+
+        //     indexName: "blainet-website",
+
+        //     // Optional: see doc section below
+        //     contextualSearch: true,
+
+        //     // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        //     externalUrlRegex: "external\\.com|domain\\.com",
+
+        //     // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        //     replaceSearchResultPathname: {
+        //         from: "/docs/", // or as RegExp: /\/docs\//
+        //         to: "/",
+        //     },
+
+        //     // Optional: Algolia search parameters
+        //     searchParameters: {},
+
+        //     // Optional: path for search page that enabled by default (`false` to disable it)
+        //     searchPagePath: "search",
+
+        //     //... other Algolia params
+        // },
     } satisfies Preset.ThemeConfig,
 };
 

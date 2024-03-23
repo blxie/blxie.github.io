@@ -6,7 +6,7 @@ description: This is a detail description about how to build a personal website 
 
 # BLAINET’S WEBSITE
 
-based on github.io & docusaurus.(start from 2024/3/22 中午 ~ 2024/3/24-01:05:36)
+based on github.io & docusaurus.(start from 2024/3/22 中午 ~ 2024/3/24-01:50:36)
 
 
 
@@ -453,7 +453,7 @@ description: 对本文档的介绍说明
 
 > - [用 docusaurus 搭建文档网页](https://blog.zhouweibin.top/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3/docusaurus/)，这篇文档总体没问题，整个流程按照这个走就行。需要注意的一个点就是，这里面没有对 `sitemap` 进行叙述，导致后面无法使用检索功能
 > - [工具推荐 | Lucas's Docs](https://docs.zhouweibin.top/docs/awesome-dev/%E5%B7%A5%E5%85%B7/)，这是上面链接的博文地址
-> - [Search | Docusaurus](https://docusaurus.io/docs/search#using-your-own-search)，本地配置时，检索功能参数设置；如果是远端部署，需要删除 `docusaurus.config.ts` 中的 `algolia` 配置，保密信息
+> - [Search | Docusaurus](https://docusaurus.io/docs/search#using-your-own-search)，本地配置时，检索功能参数设置；~~如果是远端部署，需要删除 `docusaurus.config.ts` 中的 `algolia` 配置，保密信息~~
 > - [在 Docusaurus v2 中使用 Algolia DocSearch搜索功能 - 掘金](https://juejin.cn/post/7226185606827933751)，这篇文章帮助解决了 `workflows/docsearch.yml` 一直没有配置对的问题，但是实际使用的还是第一条的，该博客帮助解决了 `sitemap` 的配置，完善流程，解决最后一步搜索的实现以及部署的问题
 > - 总的来说，第一和最后链接博客帮助最大
 

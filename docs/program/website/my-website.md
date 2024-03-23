@@ -1,7 +1,7 @@
 ---
-id: my-new-page
-title: My New Page
-description: This is a description of my new page
+id: blainet-website
+title: BLAINET’S WEBSITE
+description: This is a detail description about how to build a personal website with docusaurus and algolia
 ---
 
 # BLAINET’S WEBSITE

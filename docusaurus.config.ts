@@ -80,13 +80,13 @@ const config: Config = {
                 },
                 { to: "/blog", label: "Blog", position: "left" },
                 // {
-                //     href: "https://github.com/facebook/docusaurus",
+                //     href: "https://github.com/blxie/blxie.github.io",
                 //     label: "GitHub",
                 //     position: "right",
                 // },
                 // 顶部栏图标配置
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/blxie/blxie.github.io",
                     position: "right",
                     className: "header-github-link",
                     "aria-label": "GitHub repository",

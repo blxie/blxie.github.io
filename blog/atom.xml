@@ -14,7 +14,7 @@
         <updated>2024-03-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[我的图片：]]></summary>
         <content type="html"><![CDATA[<p>我的图片：</p>
-<img src="https://blxie.github.io/blog/assets/wallhaven-sea-beauty.png" alt="my-beauty-girl">]]></content>
+<p><img decoding="async" loading="lazy" alt="my-beauty-girl" src="https://blxie.github.io/assets/images/wallhaven-sea-beauty-3c94874777e3ac85ac62f9c43f324ff7.png" width="2340" height="1080" class="img_ev3q"></p>]]></content>
         <author>
             <name>BLAINET</name>
             <uri>https://github.com/blxie</uri>

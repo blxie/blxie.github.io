@@ -4,10 +4,21 @@
         <title>My Site Blog</title>
         <link>https://blxie.github.io/blog</link>
         <description>My Site Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[record]]></title>
+            <link>https://blxie.github.io/blog/record</link>
+            <guid>https://blxie.github.io/blog/record</guid>
+            <pubDate>Mon, 25 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[我的图片：]]></description>
+            <content:encoded><![CDATA[<p>我的图片：</p>
+<img src="https://blxie.github.io/blog/assets/wallhaven-sea-beauty.png" alt="my-beauty-girl">]]></content:encoded>
+            <category>hola</category>
+            <category>docusaurus</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://blxie.github.io/blog/welcome</link>

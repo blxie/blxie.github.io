@@ -100,14 +100,20 @@ const config: Config = {
                 // 新增顶部栏
                 {
                     type: "docSidebar",
-                    label: "新栏目1",
-                    sidebarId: "headerSidebar",
+                    label: "深度学习",
+                    sidebarId: "dlSidebar",
                     position: "left",
                 },
                 {
                     type: "docSidebar",
                     label: "编程学习",
                     sidebarId: "progSidebar",
+                    position: "left",
+                },
+                {
+                    type: "docSidebar",
+                    label: "Engine",
+                    sidebarId: "engineSidebar",
                     position: "left",
                 },
             ],

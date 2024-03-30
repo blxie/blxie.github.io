@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[280],{7953:e=>{e.exports=JSON.parse('{"label":"tools","permalink":"/docs/tags/tools","allTagsPath":"/docs/tags","count":1,"items":[{"id":"engine/search/blainet-website","title":"\u5de5\u5177","description":"\u5de5\u5177","permalink":"/docs/engine/search/blainet-website"}],"unlisted":false}')}}]);

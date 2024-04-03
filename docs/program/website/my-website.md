@@ -11,7 +11,7 @@ description: This is a detail description about how to build a personal website 
 
 based on github.io & docusaurus.(start from 2024/3/22 中午 ~ 2024/3/24-02:12:36)
 
-
+> - [How to setup Algolia DocSearch | How to Code](https://www.howtocode.io/posts/algolia/how-to-setup-algolia-doc-search)
 
 ## 一、环境搭建
 

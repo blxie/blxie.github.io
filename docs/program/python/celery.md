@@ -19,4 +19,5 @@ description: python - celery
 > - [Celery Integration With Django - GeeksforGeeks](https://www.geeksforgeeks.org/celery-integration-with-django/)
 > - [Celery 异步任务队列高级用法 以及 3种调用任务的方法详解_celery是如何分配进程的-CSDN博客](https://blog.csdn.net/PY0312/article/details/105906078)
 > - [避坑指南，异步任务Celery使用看这个就够了 - 知乎](https://zhuanlan.zhihu.com/p/587412153)
->
+> - [如何理解celery中的worker并发和多worker - 简书](https://www.jianshu.com/p/3beaa17349aa)，celery 启动多个 worker，这个比较常用
+> 

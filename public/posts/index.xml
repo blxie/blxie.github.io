@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on WELCOME TO BLAINET~ BLOG</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on WELCOME TO BLAINET~ BLOG</description>
+    <generator>Hugo</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Sun, 12 Jan 2025 18:31:43 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvim Docker</title>
+      <link>http://localhost:1313/posts/nvim-docker/</link>
+      <pubDate>Sun, 12 Jan 2025 18:31:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nvim-docker/</guid>
+      <description>&lt;h2 id=&#34;最新-lazyvim&#34;&gt;最新 lazyvim&lt;/h2&gt;&#xA;&lt;p&gt;基于 &lt;code&gt;neovim&lt;/code&gt;，因此要先安装 &lt;code&gt;neovim&lt;/code&gt;，&lt;code&gt;lazyvim&lt;/code&gt; 相当于一个插件，最后启动还是 &lt;code&gt;nvim&lt;/code&gt; 命令，&lt;/p&gt;&#xA;&lt;h3 id=&#34;常用的快捷键&#34;&gt;常用的快捷键&lt;/h3&gt;&#xA;&lt;p&gt;以下所有的字母大小写要区分！&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;w&lt;/code&gt; 直接可以按照单词向下跳转&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;ctrl w&lt;/code&gt; 然后执行下面的操作即可切换窗口&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;方向键，切换到对应窗口（常用）&lt;/li&gt;&#xA;&lt;li&gt;也可以用 &lt;code&gt;h j k l&lt;/code&gt; 组合切换，根据习惯使用&lt;/li&gt;&#xA;&lt;li&gt;更多功能参考菜单提示操作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;L&lt;/code&gt; 打开的文件切换&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;: term zsh/bash&lt;/code&gt; 打开新的终端 Terminal 并执行携带的命令&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;如果是 &lt;code&gt;zsh/bash&lt;/code&gt;，可以保留当前 Terminal&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;i/a&lt;/code&gt; 激活当前 Terminal，之后可以执行各种命令&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Esc Esc&lt;/code&gt;（按两次 &lt;code&gt;ESC&lt;/code&gt;） Terminal模式 切换到 NORMAL模式&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;各个终端只能继承最开始的 Terminal 的环境变量，打开的之间不共享环境变量，且打开的都不继承最开始的 term 的 conda 环境，只能手动激活&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;ctrl l&lt;/code&gt; 也能打开一个终端，再次执行可隐藏，但是命令会在后台继续执行&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;leader&amp;gt; b&lt;/code&gt;（b 表示 buffer）列出对 buffer 的各种操作，buffer 对应打开的各个文件&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;&amp;lt;leader&amp;gt; bd&lt;/code&gt; 删除，后续的省略写 &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt;，但是要有该操作！&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;,&lt;/code&gt; 列出所有的 buffer，还可以预览、搜索&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;终端窗口中：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;LazyExtras&lt;/code&gt; 安装额外的插件，&lt;code&gt;x&lt;/code&gt; 选中，自动安装&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

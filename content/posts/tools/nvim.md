@@ -29,7 +29,7 @@ license: ""
 
 基于 `neovim`，因此要先安装 `neovim`，`lazyvim` 相当于一个插件，最后启动还是 `nvim` 命令，
 
-### 常用的快捷键
+## 常用的快捷键
 
 以下所有的字母大小写要区分！
 
@@ -64,13 +64,13 @@ license: ""
 
 
 
-### docker 安装搭建
+## docker 安装搭建
 
 使用 docker 安装搭建，服务端以服务的形式启动，本地使用 `neovide` 连接
 
 
 
-#### 证书问题（基础环境设置）
+### 证书问题（基础环境设置）
 
 ```bash
 export http_proxy=http://172.23.240.1:10809
@@ -90,7 +90,7 @@ apt install vim -y
 
 
 
-#### 换源（先更新证书后换源）
+### 换源（先更新证书后换源）
 
 ```bash
 mv /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.bak
@@ -114,7 +114,7 @@ apt update
 
 
 
-#### host docker 安装
+### host docker 安装
 
 ```bash
 apt update
@@ -133,7 +133,7 @@ systemctl restart docker
 
 
 
-#### oh-my-zsh
+### oh-my-zsh
 
 oh-my-zsh 参考：https://www.haoyep.com/posts/zsh-config-oh-my-zsh/
 
@@ -157,7 +157,7 @@ p10k configure
 
 
 
-#### nvm 安装 npm nodejs
+### nvm 安装 npm nodejs
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
@@ -173,7 +173,7 @@ node -v;npm -v
 
 
 
-#### miniconda3
+### miniconda3
 
 ```bash
 ### conda
@@ -186,7 +186,7 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 
 
 
-#### nvim 镜像创建
+### nvim 镜像创建
 
 ```bash
 ## 1. 使用 lazygit 推荐的 alpine 镜像
@@ -246,7 +246,7 @@ mkdir -p /usr/local/Ascend
 
 
 
-### 配置文件
+## 配置文件
 
 文件夹目录，
 
@@ -400,6 +400,36 @@ neovide.exe --remote-tcp=localhost:7894
 ```
 
 docker 方法的话，直接客户端 `neovide` 按照上面的管理即可。
+
+
+### docker 多平台构建
+
+基于 `docker-buildx`，
+
+Linux 环境下面提交一直有问题，最终通过 Docker desktop 解决，利用 其自带的环境在命令行里实现多平台的打包提交，
+
+```bash
+docker buildx create --use --name multi-platform-builder --driver=docker-container
+docker buildx inspect --bootstrap
+docker buildx ls/rm
+## 正常创建 Dockerfile
+FROM blainetx/neovim:latest
+docker buildx build --platform=linux/arm64,linux/amd64 -t blainetx/neovim:latest --push .
+
+## --load . 会加载存放在本地，只能和机器架构对应
+## --push . 直接构建推送到远端，不存在该问题！所以不使用 --load .
+docker buildx build --platform linux/arm64 -t nvim:arm64 --load .
+```
+
+![image-20250115014322025](https://raw.githubusercontent.com/blxie/mkdpic/main/vpn/202501150143490.png)
+
+![image-20250115014543120](https://raw.githubusercontent.com/blxie/mkdpic/main/vpn/202501150145569.png)
+
+检查是否 push 成功：
+
+![image-20250115014738606](https://raw.githubusercontent.com/blxie/mkdpic/main/vpn/202501150147143.png)
+
+![image-20250115020618182](https://raw.githubusercontent.com/blxie/mkdpic/main/vpn/202501150206661.png)
 
 
 ## 参考文档

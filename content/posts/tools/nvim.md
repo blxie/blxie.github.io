@@ -7,9 +7,9 @@ draft: false
 authors: ["blainet"]
 description: "abc"
 
-tags: []
-categories: []
-series: []
+tags: ["diagram", "markdown"]
+categories: ["documentation"]
+series: [how-to-nvim]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -400,36 +400,3 @@ neovide.exe --remote-tcp=localhost:7894
 ```
 
 docker 方法的话，直接客户端 `neovide` 按照上面的管理即可。
-
-
-
-# hugo 博客
-
-docker
-
-```bash
-docker run -it \
-  --name hugo \
-  -w /root \
-  -v /home:/home \
-  -p 1313:1313 \
-  alpine:latest \
-  sh
-
-export http_proxy=http://172.23.240.1:10809
-export https_proxy=$http_proxy
-apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
-
-docker commit hugo hugo:latest
-docker rm hugo
-docker run -it \
-  --name hugo \
-  -w /root \
-  -v /home:/home \
-  -p 1313:1313 \
-  hugo:latest \
-  sh
-
-# hugo 监听所有网络接口
-hugo server --bind=0.0.0.0 --baseURL=http://localhost:1313
-```

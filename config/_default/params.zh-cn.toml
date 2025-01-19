@@ -1,15 +1,15 @@
 # site description
 # 网站描述
-description = "Hugo DoIt 主题官方文档"
+description = "BLAINET'S BLOG"
 # site keywords
 # 网站关键词
-keywords = ["Theme", "Hugo"]
+keywords = ["blainet", "Theme", "Hugo"]
 # App icon config
 # 应用图标配置
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "DoIt"
+  title = "BLAINET' BLOG"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false
@@ -90,10 +90,10 @@ keywords = ["Theme", "Hugo"]
     avatarLinkURL = ""
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
-    title = ""
+    title = "BLAINET'S BLOG"
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+    subtitle = "欢迎来到 BLAINET 的小站"
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = false
@@ -124,14 +124,14 @@ keywords = ["Theme", "Hugo"]
   Devto = "xxxx"
   Douban = "xxxx"
   Dribbble = ""
-  Email = "xxxx@xxxx.com"
+  Email = "162226508@qq.com"
   Facebook = ""
   Fivehundredpx = ""
   Flickr = ""
   Foursquare = ""
   FreeCodeCamp = ""
   Gitea = ""
-  GitHub = "xxxx"
+  GitHub = "blxie"
   Gitlab = ""
   Goodreads = ""
   Googlescholar = ""

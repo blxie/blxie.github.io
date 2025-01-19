@@ -400,3 +400,15 @@ neovide.exe --remote-tcp=localhost:7894
 ```
 
 docker 方法的话，直接客户端 `neovide` 按照上面的管理即可。
+
+
+## 参考文档
+
+- [neovim-config](https://github.com/iku-iku-iku/neovim-config)
+- [hugo & nvim 使用教程](https://luyuhuang.tech/2023/03/21/nvim.html)
+- [vim 扩展使用](https://cloud.tencent.com/developer/article/2125946)
+- [neovim 官方快捷键说明文档](https://neovim.io/doc/user/quickref.html)
+- [自定义参考](https://github.com/HUAHUAI23/nvim64)
+- [oh-my-zsh 安装使用教程](https://www.haoyep.com/posts/zsh-config-oh-my-zsh/)
+- [neovim github](https://github.com/neovim/neovim/tree/master)
+- [lazyvim 官方](https://lazyvim-github-io.vercel.app/)

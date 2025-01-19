@@ -1,15 +1,15 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "Learning_resources"
 subtitle: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
+date: 2025-01-19T20:16:15+08:00
+lastmod: 2025-01-19T20:16:15+08:00
 draft: false
 authors: []
 description: ""
 
-tags: []
-categories: []
-series: []
+tags: ["AI"]
+categories: ["learling"]
+series: ["road2ai"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -27,4 +27,4 @@ license: ""
 
 <!--more-->
 
-TODO
+- [机器学习系统：设计与实现](https://openmlsys.github.io/index.html)

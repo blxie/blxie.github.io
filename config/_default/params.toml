@@ -29,11 +29,11 @@ license = '<a rel="license external nofollow noopener noreffer" href="https://cr
 bundle = false
 
 [author]
-  name = "PCloud"
-  email = "heige.pcloud@outlook.com"
-  link = "https://github.com/HEIGE-PCloud"
+  name = "BLAINET"
+  email = "blxie@outlook.com"
+  link = "https://github.com/blxie"
   avatar = "/images/avatar.webp"
-  gravatarEmail = "heige.pcloud@outlook.com"
+  gravatarEmail = "blxie@outlook.com"
 
 [image]
   # cache remote images for better optimisations

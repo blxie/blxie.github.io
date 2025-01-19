@@ -4,7 +4,7 @@ subtitle: ""
 date: 2025-01-19T20:16:15+08:00
 lastmod: 2025-01-19T20:16:15+08:00
 draft: false
-authors: []
+authors: ["blainet"]
 description: ""
 
 tags: ["AI"]

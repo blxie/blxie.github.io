@@ -215,7 +215,11 @@ docker run -it \
   bash
 
 ### nvim 相关环境
-apt update && apt install git fzf curl ripgrep tmux zsh vim wget unzip build-essential npm cargo cmake pkg-config ninja-build pkg-config libssl-dev yq jq libssl-dev luarocks locales
+apt update && apt install \
+    curl vim git tmux zsh wget unzip \
+    build-essential pkg-config ninja-build libssl-dev libssl-dev \
+    fzf ripgrep yq jq luarocks locales
+
 ## 配置编码
 dpkg-reconfigure locales
 

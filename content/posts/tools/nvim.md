@@ -386,6 +386,33 @@ volumes:
   ascend-data:  # 定义共享卷
 ```
 
+完善网络部分，
+```bash
+## 这里的版本指的是使用哪个 base 的 yml，默认使用最新的
+# version: "3.8"
+
+services:
+  nvim:
+    image: blainetx/neovim:latest
+    container_name: nvim-server
+    network_mode: host
+    volumes:
+      - /home:/home
+      - /root/workspace:/workspace
+      - ascend-data:/usr/local/Ascend  # 挂载共享卷到 nvim-daemon
+    environment:
+      - TZ=Asia/Shanghai  # 设置时区为中国上海
+      - PATH=/opt/nvim-linux64/bin:$PATH  # 将 /opt/nvim-linux64/bin 添加到 PATH
+      - HTTP_PROXY=$http_proxy
+      - http_proxy=$http_proxy
+      - HTTPS_PROXY=$http_proxy
+      - https_proxy=$http_proxy
+    command: nvim --headless --listen 0.0.0.0:7894
+    restart: always
+
+volumes:
+  ascend-data:  # 定义共享卷
+```
 
 
 ### 使用方法
